@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<title>Toddi Babu Photography | Bands</title>
+<body>
+  <div class="spacer">
+    <img src="{{ url_for('static', filename='logo/toddibabulogo.png')}}" id="logo">
+    <nav>
+      <a href="./">Home</a>
+      <a href="/weddings">Weddings</a>
+      <a href="clients">Clients</a>
+      <a href="contact">Contact</a>
+      <a href="about">About</a>
+    </nav>
+    </div>
+    <div class="masonry">
+      {% for image_name in image_names %}
+        <div class="item">
+          <img src=" {{url_for('band_image', filename=image_name)}}">
+        </div>
+      {% endfor %}
+    </div>
+      <footer>
+        <div class="footer">
+          <div class="footerleft">
+            <nav>
+              <a href="./">Home</a>
+              <a href="/weddings">Weddings</a>
+              <a href="/contact">Contact</a>
+              <a href="about">About</a>
+              <a href="https://www.facebook.com/noiremedia/">Noir Media</a>
+              <a href="https://www.facebook.com/todddaughertyphotography" class="fab fa-facebook-square" id="fb"></a>
+              <a href ="https://www.instagram.com/toddibabu/" class="fab fa-instagram" id="insta"></a>
+            </nav>
+          </div>
+          <div class="footerright">
+            <p id="copyright">&copy; Toddi Babu Photography</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+body {
+  background-color: white;
+  font-weight: bolder;
+  font-family: 'Open Sans Condensed', 'Roboto', sans-serif;
+  z-index: -1;
+  color: rgba(212,175,55, 1);
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 10px;
+  letter-spacing: .15em;
+  padding: .5em 10px;
+  z-index: 1;
+  padding-top: 0em;
+}
+
+footer {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.spacer
+{
+    width: 100%;
+    height: 180px;
+}
+
+a {
+  color: rgba(212,175,55, 1);
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.spacer img {
+  height:130px;
+  width: 120px;
+  margin-left: 48%;
+  margin-right: 60%;
+}
+
+.topnav a {
+  margin-bottom: auto;
+  margin-top: 5px;
+}
+
+a:hover {
+  color: rgba(212,175,55, 1);
+  background-color: #00195c;
+}
+
+#fb {
+  border: none;
+  padding: 5px;
+  margin: 0px;
+}
+
+#insta {
+  border: none;
+  padding: 5px;
+  margin: 0px;
+}
+
+#fb:hover {
+  color:#00195c;
+  background-color: #fff;
+}
+
+#insta:hover {
+  color:#00195c;
+  background-color: #fff;
+}
+
+.logo {
+  float: left;
+}
+
+.footer {
+  width:100%;
+  height: 40px;
+  border-top: solid .5px rgba(212,175,55, 1);
+}
+
+.footerleft {
+  float: left;
+  width:50%;
+  height: 40px;
+  /* border-top: solid .5px rgba(212,175,55, 1); */
+}
+
+.footerleft nav {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5px;
+  height: 25px;
+}
+
+.footerleft a {
+  display: inline-block;
+  letter-spacing: .03em;
+  font-size: 12px;
+  padding: 0px 5px;
+  border-right: solid 1px rgba(212,175,55, 1);
+  border-radius: 0px;
+  float:left;
+}
+
+.footerright {
+  float: right;
+  width:50%;
+  height: 40px;
+  display: inline-block;
+}
+
+#copyright {
+  float: right;
+  letter-spacing: .03em;
+  font-size: 12px;
+  padding: 0px 5px;
+  color: rgba(212,175,55, 1);
+}
+
+.masonry { /* Masonry container */
+  margin: 25px 100px;
+  padding-left: 25px;
+  column-count: 3;
+  column-gap: 1em;
+}
+
+.item { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.row {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15%;
+  /* padding-right: 5%; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.enlarged {
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(3.15);
+  -ms-transform: scale(3.15); /* IE 9 */
+  -webkit-transform: scale(3.15);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
